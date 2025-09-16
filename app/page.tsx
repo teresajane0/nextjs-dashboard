@@ -1,8 +1,8 @@
 
+import { lusitana } from '@/app/ui/Font';
+import styles from '@/app/ui/home.module.css';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-
-import styles from '@/app/ui/home.module.css';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -15,15 +15,14 @@ export default function Page() {
           <div
   className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black"
 />
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
+          <p className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
             </a>
             , brought to you by Vercel.
 
           </p>
-          <h1 className="text-blue-500">I'm blue!</h1>
+          <h1 className="text-blue-500">I'm TERESA JANE SOTTO!</h1>
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
