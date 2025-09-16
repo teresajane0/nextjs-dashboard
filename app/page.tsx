@@ -24,7 +24,7 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
-          <h1 className="text-4xlblue-500">I'm Rachel!</h1>
+          <h1 className="text-4xlblue-500">I'm terese jane!</h1>
           <Link
             href="/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
@@ -40,6 +40,13 @@ export default function Page() {
         height={760}
         className="hidden md:block"
         alt="Screenshots of the dashboard project showing desktop version"
+      />
+            <Image
+        src="/hero-mobile.png"
+        width={560}
+        height={620}
+        className="block md:hidden"
+        alt="Screenshot of the dashboard project showing mobile version"
       />
         </div>
       </div>
