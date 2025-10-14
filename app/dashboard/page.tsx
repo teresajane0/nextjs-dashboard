@@ -1,4 +1,4 @@
 export default function Info() {
-return <p>dashboard page</p>;
+return <p>welcom to dashboard</p>;
 
 }
