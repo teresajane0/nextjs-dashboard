@@ -2,9 +2,11 @@ import { Revenue } from '@/app/lib/definitions';
 import { generateYAxis } from '@/app/lib/utils';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '../fonts';
+import { fetchRevenue } from '@/app/lib/data';
+ 
+export default async function Page() {
+  const revenue = await fetchRevenue();
 
-
-export default async function RevenueChart({ revenue }: { revenue: Revenue[] }) {
   const chartHeight = 350;
 
   if (!revenue || revenue.length === 0) {
@@ -53,3 +55,4 @@ export default async function RevenueChart({ revenue }: { revenue: Revenue[] }) 
     </div>
   );
 }
+
